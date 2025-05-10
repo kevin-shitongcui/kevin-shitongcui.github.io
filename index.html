@@ -1,61 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Shitong Cui - Personal Website</title>
-    <style>
-        body {
-            font-family: Times New Roman, serif; /* Changed font to Times New Roman */
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2em;
-            background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            margin-top: 0;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 0.5em;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kevin Shitong Cui</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #000;
+    }
+    nav {
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      padding: 1em;
+      border-bottom: 1px solid #ddd;
+      font-size: 0.95em;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #000;
+    }
+    .hero {
+      text-align: center;
+      padding: 0.5em 1em;
+      background-color: white;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      font-weight: 600;
+      margin-bottom: 0.5em;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #555;
+    }
+    .section {
+      max-width: 800px;
+      margin: 3em auto;
+      padding: 0 1em;
+    }
+    .section h2 {
+      font-size: 1.1em;
+      font-weight: 600;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.3em;
+      margin-bottom: 1em;
+    }
+    .section p, .section a {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    .section a {
+      color: #0071e3;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .section a:hover {
+      text-decoration: underline;
+    }
+    .profile-pic {
+      display: block;
+      margin: 1em auto;
+      width: 150px;
+      height: auto;
+      border-radius: 0;
+    }
+    .iframe-container {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Kevin Shitong Cui</h1>
-        <p>Studying Economics, Finance, and Computer Science @McGill University</p>
-    </header>
-    <div class="container">
-        <h2>About Me</h2>
-        <img src="profile_pic.jpeg" 
-              style="object-fit:contain;
-                     width:200px;
-                     height:300px;
-                     border: solid 5px #CCC"/>
-        <p>
-            Hello! I'm Kevin Shitong Cui. I am currently studying Economics, Finance, and Computer Science at undergraduate level at McGill University.<br>
-            I have a passion for exploring the intersection of these fields and seeking new opportunities to learn and grow.
-        </p>
-        <h2>Interests</h2>
-        <ul>
-            <p>I play basketball, I enjoy bike rides. I also ski and sketch. I enjoy making photography. Take a look at my photography portfolio here.</p>
-        </ul>
-    </div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#interests">Interests</a>
+    <a href="#contact">Contact</a>
+    <a href="#cv">CV</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Kevin Shitong Cui</h1>
+    <p>Economics, Finance, and Computer Science @ McGill University</p>
+  </div>
+
+  <div class="section" id="about">
+    <h2>About Me</h2>
+    <img src="profile_pic.jpeg" alt="Profile" class="profile-pic">
+    <p>
+      Hello! I’m Kevin Shitong Cui, currently pursuing a Bachelor of Arts at McGill University with a Joint Honours in Economics and Finance and a Major Concentration in Computer Science.
+      I have a passion for exploring the intersection of these fields and seeking new opportunities to learn and grow.
+    </p>
+  </div>
+
+  <div class="section" id="interests">
+    <h2>Interests</h2>
+    <p>I play basketball, enjoy cycling, skiing, and making art. I also love photography.</p>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:shitong.cui@mail.mcgill.ca">shitong.cui@mail.mcgill.ca</a><br>
+       Phone: <a href="tel:+14389412704">+1 (438) 941-2704</a></p>
+  </div>
+
+  <div class="section" id="cv">
+    <h2>CV</h2>
+    <div class="iframe-container">
+      <iframe src="Kevin_Cui_CV.pdf"></iframe>
+  </div>
+
 </body>
 </html>
